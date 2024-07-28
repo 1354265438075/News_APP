@@ -8,10 +8,10 @@ class Category_list_view extends StatelessWidget {
   const Category_list_view({Key? key}) : super(key: key);
 
   final List<CategoryModel> categories = const [
-    CategoryModel(image: "asssets/business.jpg", categoryName: "Business"),
-    CategoryModel(image: "asssets/entertainment.jpg", categoryName: "Entertainment"),
-    CategoryModel(image: "asssets/health3.jpg", categoryName: "Health"),
-    CategoryModel(image: "asssets/science.jpg", categoryName: "Science"),
+    CategoryModel(image: "assets/business.jpg", categoryName: "Business"),
+    CategoryModel(image: "assets/entertainment.jpg", categoryName: "Entertainment"),
+    CategoryModel(image: "assets/health3.jpg", categoryName: "Health"),
+    CategoryModel(image: "assets/science.jpg", categoryName: "Science"),
   ];
 
   @override

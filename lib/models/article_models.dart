@@ -1,24 +1,27 @@
-class ArticleModels{
-  final String ?image;
+class ArticleModels {
+  final String? image;
   final String title;
-  final String ?subtitle;
-  const ArticleModels({required this.image,required this.title,required this.subtitle});
+  final String? subtitle;
+
+  const ArticleModels({
+    required this.image,
+    required this.title,
+    required this.subtitle,
+  });
 
   factory ArticleModels.fromJson(Map<String, dynamic> json) {
     return ArticleModels(
-      image: json["image"],
+      image: json["urlToImage"], // Ensure this matches the API field
       title: json["title"],
-      subtitle: json["subtitle"],
+      subtitle: json["description"], // Ensure this matches the API field
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      "image": this.image,
+      "urlToImage": this.image, // Change to match API response key if needed
       "title": this.title,
-      "subtitle": this.subtitle,
+      "description": this.subtitle, // Change to match API response key if needed
     };
   }
-
-//
 }
